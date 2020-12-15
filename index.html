@@ -37,19 +37,19 @@
 
       <!-- seconda row -->
       <div class="row">
-        <div class="btn">Genera</div>
-        <div class="btn">Annulla</div>
+        <div class="btn" id='genera'>Genera</div>
+        <div class="btn" id='annulla'>Annulla</div>
       </div><!-- /seconda row -->
     </div><!-- /form-dati -->
 
   <!-- dettaglio biglietto -->
     <h2>Il tuo biglietto</h2>
 
-    <div id="biglietto">
+    <div id="biglietto" class="hidden">
       <h3>Dettaglio passeggero</h3>
-      <div class="dettaglio-biglietto row">
-        <div class="col">
-          <h3>Nome passeggero<span id="nome-passeggero"></span></h3>
+      <div class="dettaglio-biglietto">
+        <div class="col-nome-passeggero">
+          <h3>Nome passeggero:<span id="nome-passeggero"></span></h3>
         </div>
         <div class="col">
           <table>
@@ -72,23 +72,12 @@
               <td>
                 <span id="costo-biglietto"></span>
               </td>
-
             </tr>
           </table>
-
         </div>
-
       </div>
-
-
-
     </div>
-
-
   </div><!-- /wrapper -->
-
-
-
 
   <script src="js/script.js" charset="utf-8"></script>
 </body>

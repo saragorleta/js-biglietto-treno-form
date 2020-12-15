@@ -59,15 +59,24 @@ h2{
   text-transform:uppercase;
   padding:10px 0;
 }
+
+#biglietto{
+  background-color: rgb(210, 209, 209);
+  max-width: 900px;
+  margin:auto;
+  border-radius: 2px;
+}
 h3{
   text-align: justify;
   padding:10px;
 }
-#biglietto{
-  background-color: white;
-  max-width: 900px;
-  margin:auto;
+
+.col-nome-passeggero{
+  text-align: justify;
 }
-.dettaglio-biglietto{
-  background-color: grey;
+.hidden{
+  opacity:0;
+}
+.show{
+  opacity:1;
 }
