@@ -4,10 +4,88 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
   <title>Document</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- contenitore -->
+  <div class="wrapper">
+    <h1>Calcola il prezzo del tuo biglietto </h1>
+    <!-- form-dati -->
+    <div class="form-dati">
+      <!-- prima row -->
+      <div class="row">
+        <div class="col">
+          <label for="nome">Nome e Cognome</label>
+          <input id="nome" type="text" placeholder="Nome e Cognome">
+        </div>
+        <div class="col">
+          <label for="km">Km da percorrere</label>
+          <input id="km" type="number" placeholder="Inserisci i km">
+        </div>
+        <div class="col">
+          <label for="eta">Fascia d'età</label>
+          <select class="" id="eta">
+            <option value="minorenne">Minorenne</option>
+            <option value="maggiorenne">Maggiorenne</option>
+            <option value="over65">Over 65</option>
+          </select>
+        </div>
+      </div><!-- /prima row -->
+
+      <!-- seconda row -->
+      <div class="row">
+        <div class="btn">Genera</div>
+        <div class="btn">Annulla</div>
+      </div><!-- /seconda row -->
+    </div><!-- /form-dati -->
+
+  <!-- dettaglio biglietto -->
+    <h2>Il tuo biglietto</h2>
+
+    <div id="biglietto">
+      <h3>Dettaglio passeggero</h3>
+      <div class="dettaglio-biglietto row">
+        <div class="col">
+          <h3>Nome passeggero</h3>
+        </div>
+        <div class="col">
+          <table>
+            <tr>
+              <th>Offerta</th>
+              <th>Carrozza</th>
+              <th>Codice CP</th>
+              <th>Costo Biglietto</th>
+            </tr>
+            <tr>
+              <td>
+                <span id="Offerta-applicata"></span>
+              </td>
+              <td>
+                <span id="n-carrozza"></span>
+              </td>
+              <td>
+                <span id="--codice-cp"></span>
+              </td>
+              <td>
+                <span id="costo"></span>  
+              </td>
+
+            </tr>
+          </table>
+
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+
+  </div><!-- /wrapper -->
 
 
 
