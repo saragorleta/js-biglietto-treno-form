@@ -1,7 +1,7 @@
 document.getElementById("genera").addEventListener('click',
 function() {
 
-// definizioni delle variabili
+// definizioni delle variabili, ovvero i valori di input
   var prezzoFinale;
   var nome= document.getElementById('nome').value;
   var eta= document.getElementById('eta').value;
@@ -9,6 +9,7 @@ function() {
 
   var prezzoBigliettoPieno= 0.21 * totKm;
   var tipoOfferta='prezzo standard';
+  var codiceCp= Math.floor(Math.random()*(100000 - 90000))+ 90000;
 
 // definizioni delle condizioni
   if (eta=='minorenne'){
@@ -28,7 +29,7 @@ function() {
   document.getElementById('nome-passeggero').innerHTML=' '+nome;
   document.getElementById('Offerta-applicata').innerHTML=tipoOfferta;
   document.getElementById('n-carrozza').innerHTML= Math.floor(Math.random()*9) +1;
-  document.getElementById('codice-cp').innerHTML='codice';
+  document.getElementById('codice-cp').innerHTML=codiceCp;
   document.getElementById('costo-biglietto').innerHTML=prezzoFinale.toFixed(2)+' Euro';
 
   // per far apparire cliccando sul btn 'Genera'
